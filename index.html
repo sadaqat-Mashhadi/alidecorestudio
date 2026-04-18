@@ -1,0 +1,3110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تفصيل ستائر و مجالس | Curtains & Majlis Riyadh</title>
+  <meta name="description"
+    content="تفصيل ستائر، مجالس عربية، تنجيد كنب، موكيت - الرياض | Custom Curtains, Majlis, Sofa - Riyadh">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Playfair+Display:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* ===================== CSS VARIABLES ===================== */
+    :root {
+      --gold: #C9A84C;
+      --gold-light: #E8D5A3;
+      --gold-dark: #9A7A2E;
+      --cream: #FAF7F2;
+      --warm-white: #FFFEF9;
+      --sand: #F0E8D8;
+      --taupe: #D4C4A8;
+      --brown-light: #8B7355;
+      --brown: #5C4A32;
+      --brown-dark: #3A2E1F;
+      --charcoal: #2A2520;
+      --text-dark: #1A1410;
+      --text-mid: #5A4E3C;
+      --text-light: #9A8E7A;
+      --white: #FFFFFF;
+      --shadow-soft: 0 4px 30px rgba(90, 60, 20, 0.08);
+      --shadow-card: 0 8px 40px rgba(90, 60, 20, 0.12);
+      --shadow-hover: 0 16px 60px rgba(90, 60, 20, 0.18);
+      --border-gold: 1px solid rgba(201, 168, 76, 0.3);
+      --radius: 4px;
+      --radius-lg: 12px;
+      --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* ===================== RESET & BASE ===================== */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background: var(--cream);
+      color: var(--text-dark);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    body.ltr {
+      font-family: 'Cormorant Garamond', 'Tajawal', serif;
+      direction: ltr;
+      text-align: left;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-family: inherit;
+    }
+
+    /* ===================== PAGES ===================== */
+    .page {
+      display: none;
+      animation: fadeInPage 0.5s ease;
+    }
+
+    .page.active {
+      display: block;
+    }
+
+    @keyframes fadeInPage {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ===================== SCROLLBAR ===================== */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--sand);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--gold);
+      border-radius: 3px;
+    }
+
+    /* ===================== NAVBAR ===================== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(250, 247, 242, 0.97);
+      backdrop-filter: blur(20px);
+      border-bottom: var(--border-gold);
+      padding: 0 40px;
+      height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 20px rgba(90, 60, 20, 0.06);
+      transition: var(--transition);
+    }
+
+    .navbar.scrolled {
+      height: 65px;
+      box-shadow: 0 4px 30px rgba(90, 60, 20, 0.1);
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+    }
+
+    .nav-brand-icon {
+      width: 46px;
+      height: 46px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: white;
+      box-shadow: 0 4px 15px rgba(201, 168, 76, 0.4);
+      flex-shrink: 0;
+    }
+
+    .nav-brand-text {
+      line-height: 1.2;
+    }
+
+    .nav-brand-ar {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--brown-dark);
+    }
+
+    .nav-brand-en {
+      font-size: 11px;
+      font-weight: 400;
+      color: var(--text-light);
+      letter-spacing: 0.05em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-link {
+      padding: 8px 16px;
+      border-radius: var(--radius);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-mid);
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 50%;
+      right: 50%;
+      height: 2px;
+      background: var(--gold);
+      border-radius: 1px;
+      transition: var(--transition);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      left: 16px;
+      right: 16px;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--gold-dark);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .lang-btn {
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: var(--border-gold);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--gold-dark);
+      background: transparent;
+      transition: var(--transition);
+      letter-spacing: 0.05em;
+    }
+
+    .lang-btn:hover {
+      background: var(--gold);
+      color: white;
+    }
+
+    .nav-cta {
+      padding: 9px 22px;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      color: white;
+      font-size: 13px;
+      font-weight: 600;
+      box-shadow: 0 4px 15px rgba(201, 168, 76, 0.3);
+      transition: var(--transition);
+      letter-spacing: 0.03em;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(201, 168, 76, 0.45);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      width: 24px;
+      height: 2px;
+      background: var(--brown-dark);
+      border-radius: 1px;
+      transition: var(--transition);
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 75px;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      background: var(--cream);
+      border-bottom: var(--border-gold);
+      padding: 20px;
+      flex-direction: column;
+      gap: 4px;
+      box-shadow: 0 10px 30px rgba(90, 60, 20, 0.1);
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    .mobile-link {
+      padding: 12px 16px;
+      border-radius: var(--radius);
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text-mid);
+    }
+
+    .mobile-link:hover {
+      background: var(--sand);
+      color: var(--gold-dark);
+    }
+
+    /* ===================== HERO ===================== */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(160deg, var(--warm-white) 0%, var(--cream) 40%, var(--sand) 100%);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      padding-top: 75px;
+    }
+
+    .hero-pattern {
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 20% 20%, rgba(201, 168, 76, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(201, 168, 76, 0.05) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .hero-ornament {
+      position: absolute;
+      top: 120px;
+      right: -60px;
+      width: 500px;
+      height: 500px;
+      opacity: 0.04;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='90' fill='none' stroke='%23C9A84C' stroke-width='2'/%3E%3Ccircle cx='100' cy='100' r='70' fill='none' stroke='%23C9A84C' stroke-width='1'/%3E%3Cpath d='M100 10 L190 100 L100 190 L10 100 Z' fill='none' stroke='%23C9A84C' stroke-width='1'/%3E%3C/svg%3E") center/contain no-repeat;
+      animation: rotateSlow 60s linear infinite;
+    }
+
+    @keyframes rotateSlow {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .hero-inner {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 40px;
+      gap: 60px;
+      width: 100%;
+    }
+
+    .hero-content {
+      flex: 1;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 20px;
+      background: rgba(201, 168, 76, 0.12);
+      border: var(--border-gold);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--gold-dark);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      animation: slideDown 0.6s ease 0.2s both;
+    }
+
+    .hero-badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1)
+      }
+
+      50% {
+        opacity: 0.5;
+        transform: scale(1.3)
+      }
+    }
+
+    .hero-title-ar {
+      font-size: clamp(32px, 5vw, 56px);
+      font-weight: 900;
+      line-height: 1.2;
+      color: var(--brown-dark);
+      margin-bottom: 16px;
+      animation: slideDown 0.6s ease 0.3s both;
+    }
+
+    .hero-title-ar span {
+      color: var(--gold-dark);
+    }
+
+    .hero-title-en {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(16px, 2.5vw, 26px);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--text-light);
+      margin-bottom: 28px;
+      animation: slideDown 0.6s ease 0.4s both;
+    }
+
+    .hero-desc {
+      font-size: 15px;
+      line-height: 1.9;
+      color: var(--text-mid);
+      max-width: 520px;
+      margin-bottom: 40px;
+      animation: slideDown 0.6s ease 0.5s both;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      animation: slideDown 0.6s ease 0.6s both;
+    }
+
+    .btn-primary {
+      padding: 14px 32px;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      color: white;
+      font-size: 15px;
+      font-weight: 600;
+      box-shadow: 0 6px 25px rgba(201, 168, 76, 0.4);
+      transition: var(--transition);
+      border: 2px solid transparent;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 35px rgba(201, 168, 76, 0.5);
+    }
+
+    .btn-secondary {
+      padding: 14px 32px;
+      border-radius: var(--radius);
+      background: transparent;
+      color: var(--brown-dark);
+      font-size: 15px;
+      font-weight: 600;
+      border: 2px solid var(--brown-light);
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-secondary:hover {
+      background: var(--brown-dark);
+      color: white;
+      border-color: var(--brown-dark);
+      transform: translateY(-3px);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 50px;
+      animation: slideDown 0.6s ease 0.7s both;
+    }
+
+    .hero-stat {
+      text-align: center;
+    }
+
+    .hero-stat-num {
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--gold-dark);
+      line-height: 1;
+    }
+
+    .hero-stat-label {
+      font-size: 12px;
+      color: var(--text-light);
+      margin-top: 4px;
+    }
+
+    .hero-visual {
+      flex: 1;
+      max-width: 480px;
+      animation: slideUp 0.7s ease 0.4s both;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero-img-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 200px 180px;
+      gap: 12px;
+    }
+
+    .hero-img-item {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      position: relative;
+      background: var(--sand);
+    }
+
+    .hero-img-item:first-child {
+      grid-row: span 2;
+    }
+
+    .hero-img-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .hero-img-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .hero-img-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(58, 46, 31, 0.4), transparent);
+      opacity: 0;
+      transition: var(--transition);
+    }
+
+    .hero-img-item:hover .hero-img-overlay {
+      opacity: 1;
+    }
+
+    .hero-scroll {
+      text-align: center;
+      padding: 30px;
+      color: var(--text-light);
+      font-size: 13px;
+      animation: fadeIn 1s ease 1s both;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .scroll-arrow {
+      display: block;
+      margin: 8px auto 0;
+      width: 24px;
+      height: 24px;
+      border-left: 2px solid var(--gold);
+      border-bottom: 2px solid var(--gold);
+      transform: rotate(-45deg);
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: rotate(-45deg) translateY(0)
+      }
+
+      50% {
+        transform: rotate(-45deg) translateY(6px)
+      }
+    }
+
+    /* ===================== SECTION BASE ===================== */
+    .section {
+      padding: 90px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-badge {
+      display: inline-block;
+      padding: 5px 18px;
+      border-radius: 20px;
+      background: rgba(201, 168, 76, 0.1);
+      border: var(--border-gold);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gold-dark);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .section-title-ar {
+      font-size: clamp(26px, 4vw, 40px);
+      font-weight: 800;
+      color: var(--brown-dark);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .section-title-en {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(14px, 2vw, 20px);
+      font-style: italic;
+      color: var(--text-light);
+      margin-bottom: 16px;
+    }
+
+    .section-divider {
+      width: 60px;
+      height: 3px;
+      background: var(--gold);
+      margin: 0 auto 20px;
+      border-radius: 2px;
+    }
+
+    .section-desc {
+      font-size: 15px;
+      color: var(--text-mid);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.9;
+    }
+
+    /* ===================== SERVICES STRIP ===================== */
+    .services-strip {
+      background: var(--brown-dark);
+      padding: 50px 40px;
+    }
+
+    .services-strip-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2px;
+    }
+
+    .service-item {
+      padding: 30px 24px;
+      text-align: center;
+      border-inline-end: 1px solid rgba(201, 168, 76, 0.2);
+      transition: var(--transition);
+    }
+
+    .service-item:last-child {
+      border: none;
+    }
+
+    .service-item:hover {
+      background: rgba(201, 168, 76, 0.08);
+    }
+
+    .service-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    }
+
+    .service-name-ar {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin-bottom: 4px;
+    }
+
+    .service-name-en {
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.45);
+      letter-spacing: 0.06em;
+    }
+
+    /* ===================== CATEGORY TABS ===================== */
+    .cat-tabs-section {
+      background: var(--warm-white);
+      padding: 80px 0;
+    }
+
+    .cat-tabs-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    .cat-tabs {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+
+    .cat-tab {
+      padding: 10px 24px;
+      border-radius: 30px;
+      border: 2px solid var(--taupe);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-mid);
+      background: transparent;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .cat-tab:hover {
+      border-color: var(--gold);
+      color: var(--gold-dark);
+    }
+
+    .cat-tab.active {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: white;
+      box-shadow: 0 4px 15px rgba(201, 168, 76, 0.35);
+    }
+
+    .cat-tab-icon {
+      font-size: 16px;
+    }
+
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .cat-card {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: var(--cream);
+      border: var(--border-gold);
+      box-shadow: var(--shadow-soft);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .cat-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .cat-card-img {
+      aspect-ratio: 4/3;
+      overflow: hidden;
+      position: relative;
+      background: var(--sand);
+    }
+
+    .cat-card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .cat-card:hover .cat-card-img img {
+      transform: scale(1.07);
+    }
+
+    .cat-card-tag {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      background: rgba(250, 247, 242, 0.92);
+      backdrop-filter: blur(10px);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gold-dark);
+      border: var(--border-gold);
+    }
+
+    .cat-card-body {
+      padding: 18px 20px;
+    }
+
+    .cat-card-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--brown-dark);
+      margin-bottom: 6px;
+    }
+
+    .cat-card-sub {
+      font-size: 12px;
+      color: var(--text-light);
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+    }
+
+    /* ===================== ABOUT ===================== */
+    .about-section {
+      background: var(--cream);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .about-visual {
+      position: relative;
+    }
+
+    .about-img-main {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      aspect-ratio: 4/5;
+      background: var(--sand);
+      box-shadow: var(--shadow-card);
+    }
+
+    .about-img-main img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about-img-badge {
+      position: absolute;
+      bottom: -20px;
+      left: -20px;
+      background: var(--gold);
+      color: white;
+      padding: 20px 24px;
+      border-radius: var(--radius-lg);
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(201, 168, 76, 0.4);
+    }
+
+    .about-badge-num {
+      font-size: 36px;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .about-badge-text {
+      font-size: 12px;
+      margin-top: 4px;
+      opacity: 0.9;
+    }
+
+    .about-content {}
+
+    .about-title {
+      font-size: clamp(24px, 3.5vw, 38px);
+      font-weight: 800;
+      color: var(--brown-dark);
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+
+    .about-title span {
+      color: var(--gold-dark);
+    }
+
+    .about-desc {
+      font-size: 14px;
+      color: var(--text-mid);
+      line-height: 2;
+      margin-bottom: 30px;
+    }
+
+    .about-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+
+    .about-feat {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 16px;
+      border-radius: var(--radius);
+      background: var(--sand);
+      border: var(--border-gold);
+    }
+
+    .about-feat-icon {
+      font-size: 20px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .about-feat-text {}
+
+    .about-feat-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--brown-dark);
+      margin-bottom: 2px;
+    }
+
+    .about-feat-sub {
+      font-size: 11px;
+      color: var(--text-light);
+    }
+
+    /* ===================== WHY CHOOSE ===================== */
+    .why-section {
+      background: var(--sand);
+      padding: 80px 40px;
+    }
+
+    .why-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .why-card {
+      background: var(--warm-white);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      text-align: center;
+      border: var(--border-gold);
+      box-shadow: var(--shadow-soft);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .why-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-dark));
+      transform: scaleX(0);
+      transition: var(--transition);
+    }
+
+    .why-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .why-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .why-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(201, 168, 76, 0.15), rgba(201, 168, 76, 0.05));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      margin: 0 auto 20px;
+      border: var(--border-gold);
+    }
+
+    .why-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--brown-dark);
+      margin-bottom: 8px;
+    }
+
+    .why-desc {
+      font-size: 13px;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    /* ===================== TESTIMONIALS ===================== */
+    .testi-section {
+      background: var(--warm-white);
+    }
+
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .testi-card {
+      background: var(--cream);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      border: var(--border-gold);
+      box-shadow: var(--shadow-soft);
+      transition: var(--transition);
+    }
+
+    .testi-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card);
+    }
+
+    .testi-stars {
+      color: var(--gold);
+      font-size: 16px;
+      margin-bottom: 14px;
+    }
+
+    .testi-text {
+      font-size: 14px;
+      color: var(--text-mid);
+      line-height: 1.8;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .testi-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .testi-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      color: white;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .testi-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--brown-dark);
+    }
+
+    .testi-city {
+      font-size: 11px;
+      color: var(--text-light);
+    }
+
+    /* ===================== CONTACT SECTION ===================== */
+    .contact-section {
+      background: var(--cream);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 60px;
+    }
+
+    .contact-info {}
+
+    .contact-title {
+      font-size: clamp(22px, 3vw, 34px);
+      font-weight: 800;
+      color: var(--brown-dark);
+      margin-bottom: 16px;
+    }
+
+    .contact-desc {
+      font-size: 14px;
+      color: var(--text-mid);
+      line-height: 1.9;
+      margin-bottom: 32px;
+    }
+
+    .contact-items {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 20px;
+      border-radius: var(--radius);
+      background: var(--sand);
+      border: var(--border-gold);
+      transition: var(--transition);
+    }
+
+    .contact-item:hover {
+      background: var(--warm-white);
+      transform: translateX(-4px);
+    }
+
+    .contact-item-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .contact-item-label {
+      font-size: 11px;
+      color: var(--text-light);
+      margin-bottom: 2px;
+    }
+
+    .contact-item-value {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--brown-dark);
+    }
+
+    /* ===================== BOOKING FORM ===================== */
+    .booking-section {
+      background: var(--sand);
+      padding: 80px 40px;
+    }
+
+    .booking-inner {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .form-card {
+      background: var(--warm-white);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      border: var(--border-gold);
+      box-shadow: var(--shadow-card);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .form-group.full {
+      grid-column: span 2;
+    }
+
+    .form-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--brown-dark);
+    }
+
+    .form-label span {
+      color: var(--gold-dark);
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+      padding: 12px 16px;
+      border-radius: var(--radius);
+      border: 1.5px solid var(--taupe);
+      background: var(--cream);
+      color: var(--text-dark);
+      font-family: inherit;
+      font-size: 14px;
+      transition: var(--transition);
+      width: 100%;
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.15);
+      background: var(--warm-white);
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .form-submit {
+      width: 100%;
+      padding: 16px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: var(--radius);
+      border: none;
+      box-shadow: 0 6px 25px rgba(201, 168, 76, 0.4);
+      transition: var(--transition);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .form-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 35px rgba(201, 168, 76, 0.5);
+    }
+
+    .form-submit:disabled {
+      opacity: 0.7;
+      transform: none;
+      cursor: not-allowed;
+    }
+
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 30px;
+      background: rgba(44, 160, 44, 0.06);
+      border-radius: var(--radius);
+      border: 1px solid rgba(44, 160, 44, 0.2);
+    }
+
+    .form-success.show {
+      display: block;
+    }
+
+    .form-success-icon {
+      font-size: 48px;
+      margin-bottom: 12px;
+    }
+
+    .form-success-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #2C8A2C;
+      margin-bottom: 8px;
+    }
+
+    .form-success-text {
+      font-size: 14px;
+      color: var(--text-mid);
+    }
+
+    /* ===================== FLOATING BUTTONS ===================== */
+    .float-buttons {
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 900;
+    }
+
+    .float-wa {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      color: white;
+      box-shadow: 0 6px 25px rgba(37, 211, 102, 0.45);
+      transition: var(--transition);
+      cursor: pointer;
+      animation: popIn 0.5s ease 1.5s both;
+    }
+
+    .float-wa:hover {
+      transform: scale(1.12);
+      box-shadow: 0 10px 35px rgba(37, 211, 102, 0.55);
+    }
+
+    .float-book {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      color: white;
+      box-shadow: 0 6px 25px rgba(201, 168, 76, 0.45);
+      transition: var(--transition);
+      cursor: pointer;
+      animation: popIn 0.5s ease 1.7s both;
+    }
+
+    .float-book:hover {
+      transform: scale(1.12);
+      box-shadow: 0 10px 35px rgba(201, 168, 76, 0.55);
+    }
+
+    .float-tooltip {
+      position: absolute;
+      right: 70px;
+      top: 50%;
+      transform: translateY(-50%);
+      white-space: nowrap;
+      background: var(--charcoal);
+      color: white;
+      padding: 6px 12px;
+      border-radius: var(--radius);
+      font-size: 12px;
+      opacity: 0;
+      pointer-events: none;
+      transition: var(--transition);
+    }
+
+    .float-wa:hover .float-tooltip,
+    .float-book:hover .float-tooltip {
+      opacity: 1;
+    }
+
+    .float-wa,
+    .float-book {
+      position: relative;
+    }
+
+    @keyframes popIn {
+      from {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    /* ===================== FOOTER ===================== */
+    .footer {
+      background: var(--brown-dark);
+      color: rgba(255, 255, 255, 0.8);
+      padding: 60px 40px 30px;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin-bottom: 8px;
+    }
+
+    .footer-brand-sub {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 16px;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+    }
+
+    .footer-brand-desc {
+      font-size: 13px;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.55);
+    }
+
+    .footer-col-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin-bottom: 16px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .footer-col li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col a {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.55);
+      transition: var(--transition);
+    }
+
+    .footer-col a:hover {
+      color: var(--gold-light);
+      padding-inline-start: 4px;
+    }
+
+    .footer-divider {
+      height: 1px;
+      background: rgba(201, 168, 76, 0.2);
+      margin-bottom: 24px;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-copy {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .footer-copy span {
+      color: var(--gold-light);
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 10px;
+    }
+
+    .footer-social {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.5);
+      transition: var(--transition);
+    }
+
+    .footer-social:hover {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: white;
+    }
+
+    /* ===================== GALLERY LIGHTBOX ===================== */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      background: rgba(20, 15, 10, 0.95);
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .lightbox.open {
+      display: flex;
+    }
+
+    .lightbox-img {
+      max-width: 90vw;
+      max-height: 85vh;
+      border-radius: var(--radius-lg);
+      object-fit: contain;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .lightbox-close:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .lightbox-prev {
+      left: 20px;
+    }
+
+    .lightbox-next {
+      right: 20px;
+    }
+
+    .lightbox-prev:hover,
+    .lightbox-next:hover {
+      background: var(--gold);
+    }
+
+    .lightbox-counter {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 13px;
+    }
+
+    /* ===================== GALLERY PAGE ===================== */
+    .gallery-hero {
+      background: linear-gradient(160deg, var(--warm-white), var(--sand));
+      padding: 120px 40px 60px;
+      text-align: center;
+    }
+
+    .gallery-filters {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .gallery-masonry {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px 80px;
+      columns: 3;
+      column-gap: 20px;
+    }
+
+    .gallery-item {
+      break-inside: avoid;
+      margin-bottom: 20px;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+      background: var(--sand);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.04);
+    }
+
+    .gallery-item-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(58, 46, 31, 0.7) 0%, transparent 60%);
+      opacity: 0;
+      transition: var(--transition);
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+    }
+
+    .gallery-item:hover .gallery-item-overlay {
+      opacity: 1;
+    }
+
+    .gallery-item-label {
+      color: white;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    /* ===================== ABOUT PAGE ===================== */
+    .about-page-hero {
+      background: linear-gradient(160deg, var(--warm-white), var(--sand));
+      padding: 120px 40px 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-page-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .about-stat-card {
+      background: var(--warm-white);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      text-align: center;
+      border: var(--border-gold);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .about-stat-num {
+      font-size: 36px;
+      font-weight: 900;
+      color: var(--gold-dark);
+    }
+
+    .about-stat-label {
+      font-size: 12px;
+      color: var(--text-light);
+      margin-top: 4px;
+    }
+
+    .team-section {
+      background: var(--sand);
+      padding: 80px 40px;
+    }
+
+    .team-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .team-card {
+      background: var(--warm-white);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      text-align: center;
+      border: var(--border-gold);
+      box-shadow: var(--shadow-soft);
+      transition: var(--transition);
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-card);
+    }
+
+    .team-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      margin: 0 auto 16px;
+    }
+
+    .team-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--brown-dark);
+      margin-bottom: 4px;
+    }
+
+    .team-role {
+      font-size: 12px;
+      color: var(--gold-dark);
+      font-weight: 600;
+    }
+
+    .team-desc {
+      font-size: 13px;
+      color: var(--text-light);
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    /* ===================== NOTIFICATION TOAST ===================== */
+    .toast {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 3000;
+      background: var(--brown-dark);
+      color: white;
+      padding: 14px 20px;
+      border-radius: var(--radius-lg);
+      font-size: 13px;
+      box-shadow: var(--shadow-hover);
+      display: none;
+      align-items: center;
+      gap: 12px;
+      border-inline-start: 3px solid var(--gold);
+      max-width: 300px;
+      animation: slideInRight 0.3s ease;
+    }
+
+    .toast.show {
+      display: flex;
+    }
+
+    @keyframes slideInRight {
+      from {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    /* ===================== RESPONSIVE ===================== */
+    @media (max-width: 900px) {
+      .navbar {
+        padding: 0 20px;
+      }
+
+      .nav-links,
+      .nav-actions .nav-cta {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .hero-inner {
+        flex-direction: column;
+        padding: 40px 20px;
+      }
+
+      .hero-visual {
+        max-width: 100%;
+      }
+
+      .section {
+        padding: 60px 20px;
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cat-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-group.full {
+        grid-column: span 1;
+      }
+
+      .form-card {
+        padding: 28px 20px;
+      }
+
+      .about-page-hero {
+        grid-template-columns: 1fr;
+        padding: 120px 20px 40px;
+      }
+
+      .gallery-masonry {
+        columns: 2;
+        padding: 0 20px 60px;
+      }
+
+      .services-strip {
+        padding: 40px 20px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .cat-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-stats {
+        gap: 20px;
+      }
+
+      .hero-img-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 150px 150px;
+      }
+
+      .hero-img-item:first-child {
+        grid-row: span 1;
+      }
+
+      .gallery-masonry {
+        columns: 1;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+      }
+
+      .float-buttons {
+        bottom: 20px;
+        left: 20px;
+      }
+    }
+
+    /* ===================== LTR ADJUSTMENTS ===================== */
+    body.ltr .contact-item:hover {
+      transform: translateX(4px);
+    }
+
+    body.ltr .footer-col a:hover {
+      padding-inline-start: 4px;
+    }
+
+    body.ltr .float-tooltip {
+      right: auto;
+      left: 70px;
+    }
+
+    body.ltr .hero-ornament {
+      right: auto;
+      left: -60px;
+    }
+
+    /* ===================== PLACEHOLDER IMAGES ===================== */
+    .img-placeholder {
+      background: linear-gradient(135deg, var(--sand) 0%, var(--taupe) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      color: var(--gold-dark);
+      opacity: 0.5;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =================== NAVBAR =================== -->
+  <nav class="navbar" id="mainNav">
+    <div class="nav-brand" onclick="navigate('home')">
+      <div class="nav-brand-icon">🏡</div>
+      <div class="nav-brand-text">
+        <div class="nav-brand-ar" id="brandName">تفصيل ستائر و مجالس</div>
+        <div class="nav-brand-en">Curtains & Majlis | Riyadh</div>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a class="nav-link active" onclick="navigate('home')" id="nav-home">الرئيسية</a>
+      <a class="nav-link" onclick="navigate('catalog')" id="nav-catalog">المنتجات</a>
+      <a class="nav-link" onclick="navigate('gallery')" id="nav-gallery">معرض الأعمال</a>
+      <a class="nav-link" onclick="navigate('about')" id="nav-about">من نحن</a>
+      <a class="nav-link" onclick="navigate('contact')" id="nav-contact">تواصل معنا</a>
+    </div>
+    <div class="nav-actions">
+      <button class="lang-btn" onclick="toggleLang()" id="langBtn">EN</button>
+      <button class="nav-cta" onclick="navigate('booking')" id="nav-book">احجز الآن</button>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a class="mobile-link" onclick="navigate('home');toggleMenu()">🏠 الرئيسية</a>
+    <a class="mobile-link" onclick="navigate('catalog');toggleMenu()">🛒 المنتجات</a>
+    <a class="mobile-link" onclick="navigate('gallery');toggleMenu()">🖼️ معرض الأعمال</a>
+    <a class="mobile-link" onclick="navigate('about');toggleMenu()">ℹ️ من نحن</a>
+    <a class="mobile-link" onclick="navigate('contact');toggleMenu()">📞 تواصل معنا</a>
+    <a class="mobile-link" onclick="navigate('booking');toggleMenu()">📅 احجز الآن</a>
+  </div>
+
+  <!-- =================== FLOATING BUTTONS =================== -->
+  <div class="float-buttons">
+    <div class="float-wa" onclick="openWhatsApp()">
+      <div class="float-tooltip" id="wa-tip">واتساب</div>
+      💬
+    </div>
+    <div class="float-book" onclick="navigate('booking')">
+      <div class="float-tooltip" id="book-tip">احجز الآن</div>
+      📅
+    </div>
+  </div>
+
+  <!-- =================== LIGHTBOX =================== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <button class="lightbox-prev" onclick="lightboxNav(-1)">‹</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <button class="lightbox-next" onclick="lightboxNav(1)">›</button>
+    <div class="lightbox-counter" id="lightboxCounter">1 / 10</div>
+  </div>
+
+  <!-- =================== TOAST =================== -->
+  <div class="toast" id="toast">✅ <span id="toastMsg"></span></div>
+
+  <!-- =================== PAGE: HOME =================== -->
+  <div class="page active" id="page-home">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-pattern"></div>
+      <div class="hero-ornament"></div>
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <div class="hero-badge-dot"></div>
+            <span id="badge-text">الرياض · النرجس | Al Narjis, Riyadh</span>
+          </div>
+          <h1 class="hero-title-ar" id="hero-title-ar">
+            تفصيل <span>ستائر</span> فاخرة<br>ومجالس عربية أصيلة
+          </h1>
+          <p class="hero-title-en" id="hero-title-en">Luxury Curtains & Authentic Arabian Majlis</p>
+          <p class="hero-desc" id="hero-desc">
+            نقدم أرقى خدمات التفصيل والتركيب للستائر والمجالس والكنب في منطقة الرياض. جودة فاخرة، تنفيذ حسب المقاس،
+            وخدمة احترافية تُعلي من ذوقك.
+          </p>
+          <div class="hero-actions">
+            <button class="btn-primary" onclick="navigate('catalog')" id="hero-btn1">🛒 تصفح المنتجات</button>
+            <button class="btn-secondary" onclick="navigate('booking')" id="hero-btn2">📅 احجز قياس مجاني</button>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="hero-stat-num">٥٠٠+</div>
+              <div class="hero-stat-label" id="stat1">مشروع منجز</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-num">١٠+</div>
+              <div class="hero-stat-label" id="stat2">سنوات خبرة</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-num">٦</div>
+              <div class="hero-stat-label" id="stat3">أنواع ستائر</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-img-grid">
+            <div class="hero-img-item">
+              <img src="images/curtains/1.jpeg" alt="ستائر فاخرة"
+                onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>🪟</div>'">
+              <div class="hero-img-overlay"></div>
+            </div>
+            <div class="hero-img-item">
+              <img src="images/majlis/1.jpeg" alt="مجلس عربي"
+                onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>🛋️</div>'">
+              <div class="hero-img-overlay"></div>
+            </div>
+            <div class="hero-img-item">
+              <img src="images/sofa/1.jpeg" alt="كنب"
+                onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>🛏️</div>'">
+              <div class="hero-img-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span id="scroll-text">اكتشف المزيد</span>
+        <span class="scroll-arrow"></span>
+      </div>
+    </section>
+
+    <!-- Services Strip -->
+    <div class="services-strip">
+      <div class="services-strip-inner">
+        <div class="service-item">
+          <div class="service-icon">🪟</div>
+          <div class="service-name-ar">ستائر مخصصة</div>
+          <div class="service-name-en">Custom Curtains</div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">🕌</div>
+          <div class="service-name-ar">مجالس عربية</div>
+          <div class="service-name-en">Arabian Majlis</div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">🛋️</div>
+          <div class="service-name-ar">تنجيد كنب</div>
+          <div class="service-name-en">Sofa Upholstery</div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">🏠</div>
+          <div class="service-name-ar">موكيت وسجاد</div>
+          <div class="service-name-en">Carpet & Rugs</div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">⭐</div>
+          <div class="service-name-ar">فعاليات ومناسبات</div>
+          <div class="service-name-en">Events & Occasions</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Categories -->
+    <div class="cat-tabs-section">
+      <div class="cat-tabs-inner">
+        <div class="section-header">
+          <div class="section-badge" id="feat-badge">منتجاتنا المميزة</div>
+          <h2 class="section-title-ar" id="feat-title">تشكيلتنا الفاخرة</h2>
+          <p class="section-title-en">Our Premium Collection</p>
+          <div class="section-divider"></div>
+          <p class="section-desc" id="feat-desc">كل قطعة تُنفَّذ بدقة متناهية وفق مقاساتك واحتياجاتك، باستخدام أفضل
+            الخامات والأقمشة العالمية</p>
+        </div>
+        <div class="cat-tabs" id="homeCategTabs"></div>
+        <div class="cat-grid" id="homeCatGrid"></div>
+      </div>
+    </div>
+
+    <!-- About Preview -->
+    <section class="section about-section">
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-img-main">
+            <img src="images/majlis/2.jpeg" alt="شركتنا"
+              onerror="this.outerHTML='<div class=\'about-img-main\'><div class=\'img-placeholder\'>🏢</div></div>'">
+          </div>
+          <div class="about-img-badge">
+            <div class="about-badge-num">١٠+</div>
+            <div class="about-badge-text" id="badge-exp">سنة خبرة</div>
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="section-badge" id="about-badge">من نحن</div>
+          <h2 class="about-title" id="about-home-title">نحن شركة <span>متخصصة</span> في تفصيل الستائر والمجالس</h2>
+          <p class="about-desc" id="about-home-desc">
+            نحن شركة متخصصة في تفصيل الستائر، تصميم وتنفيذ المجالس العربية، تنجيد الكنب والكراسي، تركيب الموكيت، وإدارة
+            الفعاليات داخل المملكة العربية السعودية. نقدم حلولاً متكاملة حسب الطلب، حيث يتم تنفيذ جميع الأعمال وفق
+            المقاسات الدقيقة واحتياجات العميل، مع استخدام أجود الأقمشة والخامات لضمان أعلى مستويات الجودة والفخامة.
+          </p>
+          <div class="about-features">
+            <div class="about-feat">
+              <div class="about-feat-icon">📐</div>
+              <div class="about-feat-text">
+                <div class="about-feat-title" id="feat1-t">تنفيذ حسب المقاس</div>
+                <div class="about-feat-sub" id="feat1-s">Custom made to measure</div>
+              </div>
+            </div>
+            <div class="about-feat">
+              <div class="about-feat-icon">🏆</div>
+              <div class="about-feat-text">
+                <div class="about-feat-title" id="feat2-t">جودة عالية</div>
+                <div class="about-feat-sub" id="feat2-s">Premium quality materials</div>
+              </div>
+            </div>
+            <div class="about-feat">
+              <div class="about-feat-icon">⏰</div>
+              <div class="about-feat-text">
+                <div class="about-feat-title" id="feat3-t">التزام بالمواعيد</div>
+                <div class="about-feat-sub" id="feat3-s">On-time delivery</div>
+              </div>
+            </div>
+            <div class="about-feat">
+              <div class="about-feat-icon">🤝</div>
+              <div class="about-feat-text">
+                <div class="about-feat-title" id="feat4-t">خدمة شاملة</div>
+                <div class="about-feat-sub" id="feat4-s">Complete service package</div>
+              </div>
+            </div>
+          </div>
+          <button class="btn-primary" onclick="navigate('about')" id="about-btn">اعرف أكثر عنا ←</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <div class="why-section">
+      <div class="section-header" style="max-width:1200px;margin:0 auto 40px;padding:0 40px;text-align:center">
+        <div class="section-badge" id="why-badge">لماذا تختارنا</div>
+        <h2 class="section-title-ar" id="why-title">مزايا تميزنا عن غيرنا</h2>
+        <p class="section-title-en">Why Choose Us</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">📐</div>
+          <div class="why-title" id="why1-t">تفصيل دقيق حسب المقاس</div>
+          <div class="why-desc" id="why1-d">كل عمل يُنفَّذ وفق المقاسات الدقيقة لمكانك، لا توجد قطعتان متشابهتان</div>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🧵</div>
+          <div class="why-title" id="why2-t">أفخم الأقمشة والخامات</div>
+          <div class="why-desc" id="why2-d">نختار أجود المواد من أفضل الموردين لضمان الجودة والمتانة والفخامة</div>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🛠️</div>
+          <div class="why-title" id="why3-t">تركيب احترافي</div>
+          <div class="why-desc" id="why3-d">فريق متخصص يصل إليك لإجراء القياسات والتركيب النهائي باحترافية تامة</div>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🎨</div>
+          <div class="why-title" id="why4-t">تصاميم عصرية وأصيلة</div>
+          <div class="why-desc" id="why4-d">نمزج بين الأصالة العربية والتصميم العصري لإبداع مساحات فريدة</div>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">⏱️</div>
+          <div class="why-title" id="why5-t">التزام صارم بالمواعيد</div>
+          <div class="why-desc" id="why5-d">نحترم وقتك ونلتزم بالمواعيد المحددة، لأن الوقت ثمين</div>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">📞</div>
+          <div class="why-title" id="why6-t">دعم ما بعد البيع</div>
+          <div class="why-desc" id="why6-d">نقف معك بعد التركيب لأي استفسار أو صيانة ودعم مستمر</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials -->
+    <section class="section testi-section">
+      <div class="section-header">
+        <div class="section-badge" id="testi-badge">آراء عملاؤنا</div>
+        <h2 class="section-title-ar" id="testi-title">ماذا يقول عملاؤنا</h2>
+        <p class="section-title-en">Client Testimonials</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testi-text">"تجربة رائعة! الستائر جاءت بالضبط كما طلبت، والتركيب كان احترافياً جداً. أنصح الجميع
+            بهم."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">أ</div>
+            <div>
+              <div class="testi-name">أحمد العتيبي</div>
+              <div class="testi-city">الرياض - النرجس</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testi-text">"المجلس العربي الذي نفذوه في بيتنا أصبح موضع إعجاب كل من زارنا. جودة خامات عالية وتنفيذ
+            فاخر."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">س</div>
+            <div>
+              <div class="testi-name">سارة المطيري</div>
+              <div class="testi-city">الرياض - حي النخيل</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p class="testi-text">"الموكيت الذي ركبوه في المكتب جميل جداً والخدمة سريعة. سأتعامل معهم دائماً."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">م</div>
+            <div>
+              <div class="testi-name">محمد الشمري</div>
+              <div class="testi-city">الرياض - العليا</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <div style="background:linear-gradient(135deg,var(--brown-dark),var(--brown));padding:70px 40px;text-align:center">
+      <div style="max-width:700px;margin:0 auto">
+        <p style="font-size:13px;font-weight:700;color:var(--gold-light);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px"
+          id="cta-badge">احجز الآن</p>
+        <h2 style="font-size:clamp(24px,4vw,40px);font-weight:800;color:white;margin-bottom:16px;line-height:1.3"
+          id="cta-title">هل أنت مستعد لتجديد منزلك؟</h2>
+        <p style="font-size:15px;color:rgba(255,255,255,.6);margin-bottom:36px" id="cta-desc">احصل على استشارة مجانية
+          وزيارة لقياس المكان بدون أي التزام</p>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+          <button class="btn-primary" onclick="navigate('booking')" id="cta-btn1">📅 احجز قياس مجاني</button>
+          <button
+            style="padding:14px 32px;border-radius:var(--radius);background:transparent;color:white;font-size:15px;font-weight:600;border:2px solid rgba(201,168,76,.5);transition:var(--transition);cursor:pointer"
+            onmouseover="this.style.background='rgba(201,168,76,.15)'" onmouseout="this.style.background='transparent'"
+            onclick="openWhatsApp()" id="cta-btn2">💬 تواصل واتساب</button>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end page-home -->
+
+  <!-- =================== PAGE: CATALOG =================== -->
+  <div class="page" id="page-catalog">
+    <div style="background:linear-gradient(160deg,var(--warm-white),var(--sand));padding:120px 40px 60px">
+      <div style="max-width:1200px;margin:0 auto;text-align:center">
+        <div class="section-badge" id="cat-page-badge">تشكيلتنا الكاملة</div>
+        <h1 class="section-title-ar" id="cat-page-title" style="font-size:clamp(28px,5vw,48px)">كتالوج منتجاتنا</h1>
+        <p class="section-title-en">Product Catalog</p>
+        <div class="section-divider" style="margin:16px auto 24px"></div>
+        <p class="section-desc" id="cat-page-desc">استعرض تشكيلتنا الواسعة من الستائر والمجالس والكنب والسجاد — كل قطعة
+          تُنفَّذ بدقة حسب مقاساتك</p>
+      </div>
+    </div>
+    <div style="background:var(--cream);padding:60px 40px">
+      <div style="max-width:1200px;margin:0 auto">
+        <div class="cat-tabs" id="catalogTabs"></div>
+        <div id="catalogContent"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================== PAGE: GALLERY =================== -->
+  <div class="page" id="page-gallery">
+    <div class="gallery-hero">
+      <div class="section-badge" id="gal-badge">معرض أعمالنا</div>
+      <h1 class="section-title-ar" id="gal-title" style="font-size:clamp(28px,5vw,48px)">معرض الأعمال المنجزة</h1>
+      <p class="section-title-en">Our Work Gallery</p>
+      <div class="section-divider" style="margin:16px auto 24px"></div>
+      <p class="section-desc" id="gal-desc">أعمال حقيقية منفذة لعملائنا في منطقة الرياض</p>
+    </div>
+    <div class="gallery-filters" style="padding:0 40px;max-width:1200px;margin:30px auto 0"></div>
+    <div class="gallery-masonry" id="galleryGrid"></div>
+  </div>
+
+  <!-- =================== PAGE: ABOUT =================== -->
+  <div class="page" id="page-about">
+    <div style="background:linear-gradient(160deg,var(--warm-white),var(--sand));padding:120px 40px 80px">
+      <div
+        style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center">
+        <div>
+          <div class="section-badge">من نحن | About Us</div>
+          <h1
+            style="font-size:clamp(26px,4vw,42px);font-weight:900;color:var(--brown-dark);margin-bottom:20px;line-height:1.3"
+            id="about-page-title">تفصيل ستائر و <span style="color:var(--gold-dark)">مجالس</span> فاخرة</h1>
+          <p style="font-size:15px;color:var(--text-mid);line-height:2;margin-bottom:24px" id="about-page-desc1">نحن
+            شركة متخصصة في تفصيل الستائر، تصميم وتنفيذ المجالس العربية، تنجيد الكنب والكراسي، تركيب الموكيت، وإدارة
+            الفعاليات داخل المملكة العربية السعودية.</p>
+          <p style="font-size:15px;color:var(--text-mid);line-height:2;margin-bottom:32px" id="about-page-desc2">نقدم
+            حلولاً متكاملة حسب الطلب، حيث يتم تنفيذ جميع الأعمال وفق المقاسات الدقيقة واحتياجات العميل، مع استخدام أجود
+            الأقمشة والخامات لضمان أعلى مستويات الجودة والفخامة. نمزج بين الأصالة العربية والتصميم العصري لنخلق مساحات
+            راقية تعكس ذوق عملائنا.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div class="about-stat-card">
+              <div class="about-stat-num">٥٠٠+</div>
+              <div class="about-stat-label" id="stat-proj">مشروع منجز</div>
+            </div>
+            <div class="about-stat-card">
+              <div class="about-stat-num">١٠+</div>
+              <div class="about-stat-label" id="stat-yrs">سنوات خبرة</div>
+            </div>
+            <div class="about-stat-card">
+              <div class="about-stat-num">١٠٠٪</div>
+              <div class="about-stat-label" id="stat-sat">رضا العملاء</div>
+            </div>
+            <div class="about-stat-card">
+              <div class="about-stat-num">٦</div>
+              <div class="about-stat-label" id="stat-types">أنواع خدمات</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            style="border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:4/5;background:var(--sand);box-shadow:var(--shadow-card)">
+            <img src="images/majlis/3.jpeg" alt="About" style="width:100%;height:100%;object-fit:cover"
+              onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\' style=\'height:100%\'>🏢</div>'">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Detail -->
+    <section class="section" style="background:var(--cream)">
+      <div class="section-header">
+        <div class="section-badge">خدماتنا</div>
+        <h2 class="section-title-ar" id="svc-title">خدماتنا الرئيسية</h2>
+        <p class="section-title-en">Our Core Services</p>
+        <div class="section-divider"></div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
+        <div class="why-card" style="text-align:right">
+          <div class="why-icon" style="margin:0 0 20px">🪟</div>
+          <div class="why-title">تفصيل ستائر متعددة الأنواع</div>
+          <div class="why-desc">ويفي – أمريكي – روماني – رول – شرايه وجميع أنواع الستائر المخصصة حسب ذوقك</div>
+        </div>
+        <div class="why-card" style="text-align:right">
+          <div class="why-icon" style="margin:0 0 20px">🕌</div>
+          <div class="why-title">تصميم مجالس عربية</div>
+          <div class="why-desc">تصميم وتنفيذ مجالس عربية أصيلة تجمع بين الفخامة والأصالة لتناسب مساحتك</div>
+        </div>
+        <div class="why-card" style="text-align:right">
+          <div class="why-icon" style="margin:0 0 20px">🛋️</div>
+          <div class="why-title">تنجيد كنب وكراسي</div>
+          <div class="why-desc">إعادة تنجيد وتجديد الكنب والكراسي بأحدث الأقمشة والألوان العصرية</div>
+        </div>
+        <div class="why-card" style="text-align:right">
+          <div class="why-icon" style="margin:0 0 20px">🏠</div>
+          <div class="why-title">توريد وتركيب موكيت</div>
+          <div class="why-desc">توفير وتركيب الموكيت والسجاد بجميع الأحجام والألوان للمنازل والمكاتب</div>
+        </div>
+        <div class="why-card" style="text-align:right">
+          <div class="why-icon" style="margin:0 0 20px">🎪</div>
+          <div class="why-title">إدارة الفعاليات</div>
+          <div class="why-desc">تجهيز وتنظيم الفعاليات والمناسبات الخاصة بأعلى مستويات الجودة والفخامة</div>
+        </div>
+        <div class="why-card" style="text-align:right">
+          <div class="why-icon" style="margin:0 0 20px">📐</div>
+          <div class="why-title">قياس وتركيب مجاني</div>
+          <div class="why-desc">خدمة الزيارة المنزلية للقياس الدقيق والتركيب الاحترافي دون أي رسوم إضافية</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <div style="background:var(--sand);padding:70px 40px;text-align:center">
+      <div style="max-width:800px;margin:0 auto">
+        <div class="section-badge" id="loc-badge">موقعنا</div>
+        <h2 class="section-title-ar" id="loc-title">نخدم منطقة الرياض</h2>
+        <p class="section-title-en">Serving Riyadh Region</p>
+        <div class="section-divider" style="margin:16px auto 24px"></div>
+        <p style="font-size:15px;color:var(--text-mid);margin-bottom:32px;line-height:1.9" id="loc-desc">مقرنا في حي
+          النرجس، الرياض — نخدم جميع أحياء الرياض ومناطقها بفريق متنقل متخصص</p>
+        <div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap">
+          <div
+            style="display:flex;align-items:center;gap:10px;padding:12px 20px;background:var(--warm-white);border-radius:var(--radius);border:var(--border-gold)">
+            <span style="font-size:20px">📍</span>
+            <div style="text-align:right">
+              <div style="font-size:14px;font-weight:700;color:var(--brown-dark)" id="loc-addr">حي النرجس، الرياض</div>
+              <div style="font-size:11px;color:var(--text-light)">Al Narjis, Riyadh</div>
+            </div>
+          </div>
+          <div
+            style="display:flex;align-items:center;gap:10px;padding:12px 20px;background:var(--warm-white);border-radius:var(--radius);border:var(--border-gold)">
+            <span style="font-size:20px">📞</span>
+            <div style="text-align:right">
+              <div style="font-size:14px;font-weight:700;color:var(--brown-dark)">0569640322</div>
+              <div style="font-size:11px;color:var(--text-light)">واتساب ومكالمات</div>
+            </div>
+          </div>
+          <div
+            style="display:flex;align-items:center;gap:10px;padding:12px 20px;background:var(--warm-white);border-radius:var(--radius);border:var(--border-gold)">
+            <span style="font-size:20px">✉️</span>
+            <div style="text-align:right">
+              <div style="font-size:13px;font-weight:700;color:var(--brown-dark)">syedazharkazmi66@gmail.com</div>
+              <div style="font-size:11px;color:var(--text-light)">البريد الإلكتروني</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================== PAGE: CONTACT =================== -->
+  <div class="page" id="page-contact">
+    <div
+      style="background:linear-gradient(160deg,var(--warm-white),var(--sand));padding:120px 40px 60px;text-align:center">
+      <div class="section-badge">تواصل معنا</div>
+      <h1 class="section-title-ar" id="cont-title" style="font-size:clamp(28px,5vw,48px)">نحن هنا لمساعدتك</h1>
+      <p class="section-title-en">We're Here to Help</p>
+      <div class="section-divider" style="margin:16px auto 24px"></div>
+      <p class="section-desc" id="cont-desc">تواصل معنا عبر أي وسيلة تناسبك، وسيقوم فريقنا بالرد في أقرب وقت ممكن</p>
+    </div>
+    <section class="section contact-section">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2 class="contact-title" id="cont-info-title">معلومات التواصل</h2>
+          <p class="contact-desc" id="cont-info-desc">يسعدنا تقديم الاستشارة المجانية وزيارة موقعك لأخذ القياسات اللازمة
+            دون أي التزامات</p>
+          <div class="contact-items">
+            <div class="contact-item" onclick="openWhatsApp()" style="cursor:pointer">
+              <div class="contact-item-icon">💬</div>
+              <div>
+                <div class="contact-item-label">واتساب</div>
+                <div class="contact-item-value">+966 057 648 1148</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <div>
+                <div class="contact-item-label" id="phone-label">اتصل بنا</div>
+                <div class="contact-item-value">0569640322</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">✉️</div>
+              <div>
+                <div class="contact-item-label" id="email-label">البريد الإلكتروني</div>
+                <div class="contact-item-value">syedazharkazmi66@gmail.com</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div>
+                <div class="contact-item-label" id="addr-label">الموقع</div>
+                <div class="contact-item-value">حي النرجس، الرياض</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">🕐</div>
+              <div>
+                <div class="contact-item-label" id="hours-label">ساعات العمل</div>
+                <div class="contact-item-value" id="hours-value">السبت - الخميس: 8ص - 10م</div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top:32px">
+            <button class="btn-primary" style="width:100%;justify-content:center" onclick="openWhatsApp()">💬 تواصل عبر
+              واتساب الآن</button>
+          </div>
+        </div>
+        <!-- Quick Contact Form -->
+        <div>
+          <div class="form-card">
+            <div style="margin-bottom:28px">
+              <h3 style="font-size:20px;font-weight:800;color:var(--brown-dark);margin-bottom:8px"
+                id="quick-form-title">أرسل رسالة سريعة</h3>
+              <p style="font-size:13px;color:var(--text-light)" id="quick-form-sub">سنرد عليك خلال ساعات</p>
+            </div>
+            <div id="quickFormSuccess" class="form-success">
+              <div class="form-success-icon">✅</div>
+              <div class="form-success-title" id="qs-title">تم الإرسال بنجاح!</div>
+              <div class="form-success-text" id="qs-text">شكراً لتواصلك، سيصلك ردنا قريباً</div>
+            </div>
+            <div id="quickFormFields">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label" id="qf-name-l">الاسم <span>*</span></label>
+                  <input class="form-input" id="qfName" type="text" placeholder="اسمك الكريم">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" id="qf-phone-l">رقم الجوال <span>*</span></label>
+                  <input class="form-input" id="qfPhone" type="tel" placeholder="+966 5XX XXX XXXX">
+                </div>
+                <div class="form-group full">
+                  <label class="form-label" id="qf-msg-l">رسالتك <span>*</span></label>
+                  <textarea class="form-textarea" id="qfMsg" placeholder="اكتب استفسارك أو طلبك هنا..."></textarea>
+                </div>
+              </div>
+              <button class="form-submit" onclick="sendQuickMsg()" id="qf-submit">إرسال الرسالة ✉️</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- =================== PAGE: BOOKING =================== -->
+  <div class="page" id="page-booking">
+    <div
+      style="background:linear-gradient(160deg,var(--warm-white),var(--sand));padding:120px 40px 60px;text-align:center">
+      <div class="section-badge" id="book-badge">احجز الآن</div>
+      <h1 class="section-title-ar" id="book-title" style="font-size:clamp(28px,5vw,48px)">احجز زيارة قياس مجانية</h1>
+      <p class="section-title-en">Book a Free Measurement Visit</p>
+      <div class="section-divider" style="margin:16px auto 24px"></div>
+      <p class="section-desc" id="book-desc">أرسل تفاصيل طلبك وسيتواصل معك فريقنا لتأكيد موعد الزيارة في أقرب وقت</p>
+    </div>
+    <div class="booking-section">
+      <div class="booking-inner">
+        <div class="form-card">
+          <div id="bookingSuccess" class="form-success">
+            <div class="form-success-icon">🎉</div>
+            <div class="form-success-title" id="bs-title">تم الحجز بنجاح!</div>
+            <div class="form-success-text" id="bs-text">شكراً لك! تم إرسال طلبك وسيتواصل معك فريقنا خلال 24 ساعة لتأكيد
+              الموعد.</div>
+            <button class="btn-primary" style="margin-top:20px" onclick="navigate('home')" id="bs-btn">العودة
+              للرئيسية</button>
+          </div>
+          <div id="bookingFormFields">
+            <div style="margin-bottom:28px;padding-bottom:20px;border-bottom:var(--border-gold)">
+              <h3 style="font-size:22px;font-weight:800;color:var(--brown-dark);margin-bottom:6px" id="bf-head">تفاصيل
+                الحجز</h3>
+              <p style="font-size:13px;color:var(--text-light)" id="bf-sub">جميع الحقول المميزة بـ * إلزامية</p>
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" id="bf-name-l">الاسم الكامل <span>*</span></label>
+                <input class="form-input" id="bfName" type="text" placeholder="اسمك الكريم">
+              </div>
+              <div class="form-group">
+                <label class="form-label" id="bf-phone-l">رقم الجوال <span>*</span></label>
+                <input class="form-input" id="bfPhone" type="tel" placeholder="+966 5XX XXX XXXX">
+              </div>
+              <div class="form-group">
+                <label class="form-label" id="bf-email-l">البريد الإلكتروني</label>
+                <input class="form-input" id="bfEmail" type="email" placeholder="email@example.com">
+              </div>
+              <div class="form-group">
+                <label class="form-label" id="bf-city-l">الحي / المنطقة <span>*</span></label>
+                <input class="form-input" id="bfCity" type="text" placeholder="مثال: حي النرجس">
+              </div>
+              <div class="form-group full">
+                <label class="form-label" id="bf-addr-l">العنوان التفصيلي <span>*</span></label>
+                <input class="form-input" id="bfAddr" type="text" placeholder="الشارع، البناية، الدور، رقم الوحدة">
+              </div>
+              <div class="form-group">
+                <label class="form-label" id="bf-service-l">الخدمة المطلوبة <span>*</span></label>
+                <select class="form-select" id="bfService">
+                  <option value="">-- اختر الخدمة --</option>
+                  <option value="curtains">تفصيل ستائر</option>
+                  <option value="majlis">مجلس عربي</option>
+                  <option value="sofa">تنجيد كنب</option>
+                  <option value="carpet">موكيت وسجاد</option>
+                  <option value="rugs">سجاد</option>
+                  <option value="events">فعاليات ومناسبات</option>
+                  <option value="other">خدمة أخرى</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" id="bf-date-l">التاريخ المفضل</label>
+                <input class="form-input" id="bfDate" type="date">
+              </div>
+              <div class="form-group full">
+                <label class="form-label" id="bf-msg-l">تفاصيل إضافية</label>
+                <textarea class="form-textarea" id="bfMsg"
+                  placeholder="صف لنا احتياجاتك بالتفصيل، حجم الغرفة، الألوان المفضلة، أي متطلبات خاصة..."></textarea>
+              </div>
+            </div>
+            <div
+              style="background:rgba(201,168,76,.08);border:var(--border-gold);border-radius:var(--radius);padding:16px;margin:16px 0;font-size:13px;color:var(--text-mid);display:flex;gap:10px;align-items:flex-start">
+              <span>ℹ️</span>
+              <span id="bf-note">سيتم إرسال تفاصيل حجزك إلى فريقنا وسيتواصل معك خلال 24 ساعة لتأكيد موعد الزيارة
+                المجانية</span>
+            </div>
+            <button class="form-submit" onclick="submitBooking()" id="bf-submit">📅 تأكيد الحجز — إرسال الطلب</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand-name">تفصيل ستائر و مجالس</div>
+          <div class="footer-brand-sub">Curtains & Majlis | Al Narjis, Riyadh</div>
+          <p class="footer-brand-desc">نقدم أرقى خدمات التفصيل والتنجيد في منطقة الرياض منذ أكثر من عشر سنوات. الجودة
+            والفخامة والدقة هي أساس عملنا.</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title" id="footer-nav">الصفحات</div>
+          <ul>
+            <li><a onclick="navigate('home')" href="#">الرئيسية</a></li>
+            <li><a onclick="navigate('catalog')" href="#">المنتجات</a></li>
+            <li><a onclick="navigate('gallery')" href="#">معرض الأعمال</a></li>
+            <li><a onclick="navigate('about')" href="#">من نحن</a></li>
+            <li><a onclick="navigate('contact')" href="#">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title" id="footer-services">خدماتنا</div>
+          <ul>
+            <li><a href="#">تفصيل ستائر</a></li>
+            <li><a href="#">مجالس عربية</a></li>
+            <li><a href="#">تنجيد كنب</a></li>
+            <li><a href="#">موكيت وسجاد</a></li>
+            <li><a href="#">فعاليات</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title" id="footer-contact">تواصل معنا</div>
+          <ul>
+            <li style="font-size:13px;color:rgba(255,255,255,.55)">📍 حي النرجس، الرياض</li>
+            <li style="font-size:13px;color:rgba(255,255,255,.55)">📞 0569640322</li>
+            <li style="font-size:13px;color:rgba(255,255,255,.55)">💬 +966 057 648 1148</li>
+            <li style="font-size:13px;color:rgba(255,255,255,.55);word-break:break-all">✉️ syedazharkazmi66@gmail.com
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2025 <span>تفصيل ستائر و مجالس</span> — جميع الحقوق محفوظة | All Rights Reserved
+        </div>
+        <div class="footer-socials">
+          <div class="footer-social" onclick="openWhatsApp()" title="WhatsApp">💬</div>
+          <div class="footer-social" title="Phone">📞</div>
+          <div class="footer-social" title="Email">✉️</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =================== JAVASCRIPT =================== -->
+  <script>
+    // ===================== DATA =====================
+    const WHATSAPP_NUMBER = '+9660576481148';
+    const OWNER_EMAIL = 'syedazharkazmi66@gmail.com';
+
+    const categories = [
+      { id: 'curtains', ar: 'ستائر', en: 'Curtains', icon: '🪟', desc_ar: 'تشكيلة واسعة من الستائر المخصصة', desc_en: 'Wide range of custom curtains', count: 10 },
+      { id: 'majlis', ar: 'مجالس عربية', en: 'Majlis', icon: '🕌', desc_ar: 'مجالس عربية أصيلة وفاخرة', desc_en: 'Authentic Arabian Majlis designs', count: 10 },
+      { id: 'sofa', ar: 'كنب وكراسي', en: 'Sofa', icon: '🛋️', desc_ar: 'تنجيد وتجديد الكنب والكراسي', desc_en: 'Sofa & chair upholstery', count: 10 },
+      { id: 'carpet', ar: 'موكيت', en: 'Carpet', icon: '🏠', desc_ar: 'موكيت عالي الجودة بأحجام متنوعة', desc_en: 'High quality carpets & installation', count: 10 },
+      { id: 'rugs', ar: 'سجاد', en: 'Rugs', icon: '🟫', desc_ar: 'سجاد فاخر بتصاميم متميزة', desc_en: 'Premium luxury rugs', count: 10 },
+      { id: 'events', ar: 'فعاليات', en: 'Events', icon: '🎪', desc_ar: 'تجهيز وتنظيم الفعاليات', desc_en: 'Event setup & decoration', count: 10 },
+    ];
+
+    const catIcons = { curtains: '🪟', majlis: '🕌', sofa: '🛋️', carpet: '🏠', rugs: '🟫', events: '🎪' };
+
+    // Current language
+    let lang = 'ar';
+    let activeCat = 'curtains';
+    let currentPage = 'home';
+    let lightboxImages = [];
+    let lightboxIndex = 0;
+
+    // ===================== TRANSLATIONS =====================
+    const t = {
+      ar: {
+        nav: ['الرئيسية', 'المنتجات', 'معرض الأعمال', 'من نحن', 'تواصل معنا', 'احجز الآن'],
+        badge: 'الرياض · النرجس | Al Narjis, Riyadh',
+        heroTitleAr: 'تفصيل <span>ستائر</span> فاخرة<br>ومجالس عربية أصيلة',
+        heroTitleEn: 'Luxury Curtains & Authentic Arabian Majlis',
+        heroDesc: 'نقدم أرقى خدمات التفصيل والتركيب للستائر والمجالس والكنب في منطقة الرياض. جودة فاخرة، تنفيذ حسب المقاس، وخدمة احترافية تُعلي من ذوقك.',
+        heroBtn1: '🛒 تصفح المنتجات', heroBtn2: '📅 احجز قياس مجاني',
+        stat1: 'مشروع منجز', stat2: 'سنوات خبرة', stat3: 'أنواع ستائر',
+        scroll: 'اكتشف المزيد',
+        featBadge: 'منتجاتنا المميزة', featTitle: 'تشكيلتنا الفاخرة', featDesc: 'كل قطعة تُنفَّذ بدقة متناهية وفق مقاساتك واحتياجاتك',
+        aboutBadge: 'من نحن',
+        aboutHomeTitle: 'نحن شركة <span>متخصصة</span> في تفصيل الستائر والمجالس',
+        aboutHomeDesc: 'نحن شركة متخصصة في تفصيل الستائر، تصميم وتنفيذ المجالس العربية، تنجيد الكنب والكراسي، تركيب الموكيت، وإدارة الفعاليات داخل المملكة العربية السعودية.',
+        feat1t: 'تنفيذ حسب المقاس', feat1s: 'Custom made to measure',
+        feat2t: 'جودة عالية', feat2s: 'Premium quality materials',
+        feat3t: 'التزام بالمواعيد', feat3s: 'On-time delivery',
+        feat4t: 'خدمة شاملة', feat4s: 'Complete service package',
+        aboutBtn: 'اعرف أكثر عنا ←',
+        whyBadge: 'لماذا تختارنا', whyTitle: 'مزايا تميزنا عن غيرنا',
+        testiBadge: 'آراء عملاؤنا', testiTitle: 'ماذا يقول عملاؤنا',
+        ctaBadge: 'احجز الآن', ctaTitle: 'هل أنت مستعد لتجديد منزلك؟',
+        ctaDesc: 'احصل على استشارة مجانية وزيارة لقياس المكان بدون أي التزام',
+        ctaBtn1: '📅 احجز قياس مجاني', ctaBtn2: '💬 تواصل واتساب',
+        waTip: 'واتساب', bookTip: 'احجز الآن',
+        bookBadge: 'احجز الآن', bookTitle: 'احجز زيارة قياس مجانية', bookDesc: 'أرسل تفاصيل طلبك وسيتواصل معك فريقنا لتأكيد موعد الزيارة',
+        bfHead: 'تفاصيل الحجز', bfSub: 'جميع الحقول المميزة بـ * إلزامية',
+        bfNameL: 'الاسم الكامل', bfPhoneL: 'رقم الجوال', bfEmailL: 'البريد الإلكتروني',
+        bfCityL: 'الحي / المنطقة', bfAddrL: 'العنوان التفصيلي', bfServiceL: 'الخدمة المطلوبة',
+        bfDateL: 'التاريخ المفضل', bfMsgL: 'تفاصيل إضافية',
+        bfNote: 'سيتم إرسال تفاصيل حجزك إلى فريقنا وسيتواصل معك خلال 24 ساعة لتأكيد موعد الزيارة المجانية',
+        bfSubmit: '📅 تأكيد الحجز — إرسال الطلب',
+        bsTitle: 'تم الحجز بنجاح!', bsText: 'شكراً لك! تم إرسال طلبك وسيتواصل معك فريقنا خلال 24 ساعة لتأكيد الموعد.', bsBtn: 'العودة للرئيسية',
+        galBadge: 'معرض أعمالنا', galTitle: 'معرض الأعمال المنجزة', galDesc: 'أعمال حقيقية منفذة لعملائنا في منطقة الرياض',
+        contTitle: 'نحن هنا لمساعدتك', contDesc: 'تواصل معنا عبر أي وسيلة تناسبك، وسيقوم فريقنا بالرد في أقرب وقت ممكن',
+        contInfoTitle: 'معلومات التواصل', contInfoDesc: 'يسعدنا تقديم الاستشارة المجانية وزيارة موقعك لأخذ القياسات اللازمة',
+        phoneLabel: 'اتصل بنا', emailLabel: 'البريد الإلكتروني', addrLabel: 'الموقع', hoursLabel: 'ساعات العمل', hoursValue: 'السبت - الخميس: 8ص - 10م',
+        quickFormTitle: 'أرسل رسالة سريعة', quickFormSub: 'سنرد عليك خلال ساعات',
+        qfNameL: 'الاسم', qfPhoneL: 'رقم الجوال', qfMsgL: 'رسالتك', qfSubmit: 'إرسال الرسالة ✉️',
+        qsTitle: 'تم الإرسال بنجاح!', qsText: 'شكراً لتواصلك، سيصلك ردنا قريباً',
+        footerNav: 'الصفحات', footerServices: 'خدماتنا', footerContact: 'تواصل معنا',
+        catPageBadge: 'تشكيلتنا الكاملة', catPageTitle: 'كتالوج منتجاتنا', catPageDesc: 'استعرض تشكيلتنا الواسعة من الستائر والمجالس والكنب والسجاد',
+        aboutPageTitle: 'تفصيل ستائر و <span style="color:var(--gold-dark)">مجالس</span> فاخرة',
+        statProj: 'مشروع منجز', statYrs: 'سنوات خبرة', statSat: 'رضا العملاء', statTypes: 'أنواع خدمات',
+        svcTitle: 'خدماتنا الرئيسية',
+        locBadge: 'موقعنا', locTitle: 'نخدم منطقة الرياض', locDesc: 'مقرنا في حي النرجس، الرياض — نخدم جميع أحياء الرياض', locAddr: 'حي النرجس، الرياض',
+        badgeExp: 'سنة خبرة',
+      },
+      en: {
+        nav: ['Home', 'Products', 'Gallery', 'About Us', 'Contact', 'Book Now'],
+        badge: 'Al Narjis, Riyadh | النرجس',
+        heroTitleAr: 'Luxury <span>Curtains</span> &<br>Authentic Arabian Majlis',
+        heroTitleEn: 'Custom Made to Your Exact Measurements',
+        heroDesc: 'We offer premium curtain tailoring, Arabian majlis design, sofa upholstery, and carpet installation across Riyadh. Premium quality, custom made, professional service.',
+        heroBtn1: '🛒 Browse Products', heroBtn2: '📅 Book Free Measurement',
+        stat1: 'Projects Done', stat2: 'Years Experience', stat3: 'Curtain Types',
+        scroll: 'Discover More',
+        featBadge: 'Featured Products', featTitle: 'Our Premium Collection', featDesc: 'Every piece is crafted with precision to your exact measurements and needs',
+        aboutBadge: 'About Us',
+        aboutHomeTitle: 'We are <span>Specialized</span> in Curtains & Majlis',
+        aboutHomeDesc: 'We specialize in curtain tailoring, Arabian majlis design and execution, sofa & chair upholstery, carpet installation, and event management across Saudi Arabia.',
+        feat1t: 'Custom to Measure', feat1s: 'دقة في القياسات',
+        feat2t: 'Premium Quality', feat2s: 'جودة خامات عالية',
+        feat3t: 'On-Time Delivery', feat3s: 'التزام بالمواعيد',
+        feat4t: 'Full Service', feat4s: 'خدمة متكاملة',
+        aboutBtn: 'Learn More About Us →',
+        whyBadge: 'Why Choose Us', whyTitle: 'Our Competitive Advantages',
+        testiBadge: 'Client Reviews', testiTitle: 'What Our Clients Say',
+        ctaBadge: 'Book Now', ctaTitle: 'Ready to Transform Your Space?',
+        ctaDesc: 'Get a free consultation and site measurement visit with no obligations',
+        ctaBtn1: '📅 Book Free Measurement', ctaBtn2: '💬 WhatsApp Us',
+        waTip: 'WhatsApp', bookTip: 'Book Now',
+        bookBadge: 'Book Now', bookTitle: 'Book a Free Measurement Visit', bookDesc: 'Submit your request and our team will contact you to confirm the appointment',
+        bfHead: 'Booking Details', bfSub: 'All fields marked * are required',
+        bfNameL: 'Full Name', bfPhoneL: 'Phone Number', bfEmailL: 'Email Address',
+        bfCityL: 'District / Area', bfAddrL: 'Detailed Address', bfServiceL: 'Service Required',
+        bfDateL: 'Preferred Date', bfMsgL: 'Additional Details',
+        bfNote: 'Your booking details will be sent to our team who will contact you within 24 hours to confirm the free visit',
+        bfSubmit: '📅 Confirm Booking — Submit Request',
+        bsTitle: 'Booking Confirmed!', bsText: 'Thank you! Your request has been sent. Our team will contact you within 24 hours.', bsBtn: 'Back to Home',
+        galBadge: 'Our Portfolio', galTitle: 'Completed Works Gallery', galDesc: 'Real projects completed for our clients across Riyadh',
+        contTitle: "We're Here to Help", contDesc: 'Contact us through any channel and our team will respond as soon as possible',
+        contInfoTitle: 'Contact Information', contInfoDesc: 'We are happy to offer free consultation and site visits for measurements',
+        phoneLabel: 'Call Us', emailLabel: 'Email', addrLabel: 'Location', hoursLabel: 'Working Hours', hoursValue: 'Sat - Thu: 8AM - 10PM',
+        quickFormTitle: 'Send a Quick Message', quickFormSub: "We'll reply within hours",
+        qfNameL: 'Your Name', qfPhoneL: 'Phone Number', qfMsgL: 'Your Message', qfSubmit: 'Send Message ✉️',
+        qsTitle: 'Sent Successfully!', qsText: 'Thank you for reaching out. We will reply soon.',
+        footerNav: 'Pages', footerServices: 'Services', footerContact: 'Contact',
+        catPageBadge: 'Full Collection', catPageTitle: 'Product Catalog', catPageDesc: 'Browse our wide range of curtains, majlis, sofas, and carpets',
+        aboutPageTitle: 'Luxury <span style="color:var(--gold-dark)">Curtains</span> & Majlis',
+        statProj: 'Projects Done', statYrs: 'Years Experience', statSat: 'Client Satisfaction', statTypes: 'Service Types',
+        svcTitle: 'Our Core Services',
+        locBadge: 'Our Location', locTitle: 'Serving Riyadh Region', locDesc: 'Based in Al Narjis, Riyadh — serving all Riyadh districts with a mobile specialist team', locAddr: 'Al Narjis, Riyadh',
+        badgeExp: 'Years Experience',
+      }
+    };
+
+    // ===================== LANGUAGE TOGGLE =====================
+    function toggleLang() {
+      lang = lang === 'ar' ? 'en' : 'ar';
+      const isAr = lang === 'ar';
+      document.documentElement.lang = lang;
+      document.documentElement.dir = isAr ? 'rtl' : 'ltr';
+      document.body.className = isAr ? '' : 'ltr';
+      document.getElementById('langBtn').textContent = isAr ? 'EN' : 'عربي';
+      applyTranslations();
+      renderCategories();
+      renderCatalog();
+      renderGallery();
+    }
+
+    function applyTranslations() {
+      const tx = t[lang];
+      const navIds = ['nav-home', 'nav-catalog', 'nav-gallery', 'nav-about', 'nav-contact'];
+      navIds.forEach((id, i) => { const el = document.getElementById(id); if (el) el.textContent = tx.nav[i]; });
+      document.getElementById('nav-book').textContent = tx.nav[5];
+      safeSet('badge-text', tx.badge);
+      safeSetHTML('hero-title-ar', tx.heroTitleAr);
+      safeSet('hero-title-en', tx.heroTitleEn);
+      safeSet('hero-desc', tx.heroDesc);
+      safeSet('hero-btn1', tx.heroBtn1);
+      safeSet('hero-btn2', tx.heroBtn2);
+      safeSet('stat1', tx.stat1); safeSet('stat2', tx.stat2); safeSet('stat3', tx.stat3);
+      safeSet('scroll-text', tx.scroll);
+      safeSet('feat-badge', tx.featBadge); safeSet('feat-title', tx.featTitle); safeSet('feat-desc', tx.featDesc);
+      safeSet('about-badge', tx.aboutBadge);
+      safeSetHTML('about-home-title', tx.aboutHomeTitle);
+      safeSet('about-home-desc', tx.aboutHomeDesc);
+      safeSet('feat1-t', tx.feat1t); safeSet('feat1-s', tx.feat1s);
+      safeSet('feat2-t', tx.feat2t); safeSet('feat2-s', tx.feat2s);
+      safeSet('feat3-t', tx.feat3t); safeSet('feat3-s', tx.feat3s);
+      safeSet('feat4-t', tx.feat4t); safeSet('feat4-s', tx.feat4s);
+      safeSet('about-btn', tx.aboutBtn);
+      safeSet('why-badge', tx.whyBadge); safeSet('why-title', tx.whyTitle);
+      safeSet('testi-badge', tx.testiBadge); safeSet('testi-title', tx.testiTitle);
+      safeSet('cta-badge', tx.ctaBadge); safeSet('cta-title', tx.ctaTitle); safeSet('cta-desc', tx.ctaDesc);
+      safeSet('cta-btn1', tx.ctaBtn1); safeSet('cta-btn2', tx.ctaBtn2);
+      safeSet('wa-tip', tx.waTip); safeSet('book-tip', tx.bookTip);
+      safeSet('book-badge', tx.bookBadge); safeSet('book-title', tx.bookTitle); safeSet('book-desc', tx.bookDesc);
+      safeSet('bf-head', tx.bfHead); safeSet('bf-sub', tx.bfSub);
+      safeSet('bf-name-l', tx.bfNameL + ' ★'); safeSet('bf-phone-l', tx.bfPhoneL + ' ★');
+      safeSet('bf-email-l', tx.bfEmailL); safeSet('bf-city-l', tx.bfCityL + ' ★');
+      safeSet('bf-addr-l', tx.bfAddrL + ' ★'); safeSet('bf-service-l', tx.bfServiceL + ' ★');
+      safeSet('bf-date-l', tx.bfDateL); safeSet('bf-msg-l', tx.bfMsgL);
+      safeSet('bf-note', tx.bfNote); safeSet('bf-submit', tx.bfSubmit);
+      safeSet('bs-title', tx.bsTitle); safeSet('bs-text', tx.bsText); safeSet('bs-btn', tx.bsBtn);
+      safeSet('gal-badge', tx.galBadge); safeSet('gal-title', tx.galTitle); safeSet('gal-desc', tx.galDesc);
+      safeSet('cont-title', tx.contTitle); safeSet('cont-desc', tx.contDesc);
+      safeSet('cont-info-title', tx.contInfoTitle); safeSet('cont-info-desc', tx.contInfoDesc);
+      safeSet('phone-label', tx.phoneLabel); safeSet('email-label', tx.emailLabel);
+      safeSet('addr-label', tx.addrLabel); safeSet('hours-label', tx.hoursLabel); safeSet('hours-value', tx.hoursValue);
+      safeSet('quick-form-title', tx.quickFormTitle); safeSet('quick-form-sub', tx.quickFormSub);
+      safeSet('qf-name-l', tx.qfNameL + ' ★'); safeSet('qf-phone-l', tx.qfPhoneL + ' ★');
+      safeSet('qf-msg-l', tx.qfMsgL + ' ★'); safeSet('qf-submit', tx.qfSubmit);
+      safeSet('qs-title', tx.qsTitle); safeSet('qs-text', tx.qsText);
+      safeSet('footer-nav', tx.footerNav); safeSet('footer-services', tx.footerServices); safeSet('footer-contact', tx.footerContact);
+      safeSet('cat-page-badge', tx.catPageBadge); safeSet('cat-page-title', tx.catPageTitle); safeSet('cat-page-desc', tx.catPageDesc);
+      safeSetHTML('about-page-title', tx.aboutPageTitle);
+      safeSet('stat-proj', tx.statProj); safeSet('stat-yrs', tx.statYrs); safeSet('stat-sat', tx.statSat); safeSet('stat-types', tx.statTypes);
+      safeSet('svc-title', tx.svcTitle);
+      safeSet('loc-badge', tx.locBadge); safeSet('loc-title', tx.locTitle); safeSet('loc-desc', tx.locDesc); safeSet('loc-addr', tx.locAddr);
+      safeSet('badge-exp', tx.badgeExp);
+    }
+    function safeSet(id, val) { const el = document.getElementById(id); if (el && val !== undefined) el.textContent = val; }
+    function safeSetHTML(id, val) { const el = document.getElementById(id); if (el && val !== undefined) el.innerHTML = val; }
+
+    // ===================== NAVIGATION =====================
+    function navigate(page) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+      const el = document.getElementById('page-' + page);
+      if (el) el.classList.add('active');
+      const navEl = document.getElementById('nav-' + page);
+      if (navEl) navEl.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      currentPage = page;
+      if (page === 'catalog') renderCatalog();
+      if (page === 'gallery') renderGallery();
+    }
+
+    // ===================== RENDER CATEGORIES (HOME) =====================
+    function renderCategories() {
+      const tabsEl = document.getElementById('homeCategTabs');
+      const gridEl = document.getElementById('homeCatGrid');
+      if (!tabsEl || !gridEl) return;
+      tabsEl.innerHTML = categories.map(c => `
+    <button class="cat-tab${c.id === activeCat ? ' active' : ''}" onclick="selectCat('${c.id}')">
+      <span class="cat-tab-icon">${c.icon}</span>
+      ${lang === 'ar' ? c.ar : c.en}
+    </button>
+  `).join('');
+      const cat = categories.find(c => c.id === activeCat);
+      gridEl.innerHTML = Array.from({ length: 6 }, (_, i) => `
+    <div class="cat-card" onclick="openLightboxCat('${cat.id}', ${i})">
+      <div class="cat-card-img">
+        <img src="images/${cat.id}/${i + 1}.jpeg" alt="${lang === 'ar' ? cat.ar : cat.en} ${i + 1}"
+          onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>${cat.icon}</div>'">
+        <div class="cat-card-tag">${lang === 'ar' ? cat.ar : cat.en}</div>
+      </div>
+      <div class="cat-card-body">
+        <div class="cat-card-title">${lang === 'ar' ? cat.ar : cat.en} ${i + 1}</div>
+        <div class="cat-card-sub">${lang === 'ar' ? cat.desc_ar : cat.desc_en}</div>
+      </div>
+    </div>
+  `).join('');
+    }
+
+    function selectCat(id) {
+      activeCat = id;
+      renderCategories();
+    }
+
+    // ===================== RENDER CATALOG PAGE =====================
+    function renderCatalog() {
+      const tabsEl = document.getElementById('catalogTabs');
+      const contentEl = document.getElementById('catalogContent');
+      if (!tabsEl || !contentEl) return;
+      tabsEl.innerHTML = categories.map(c => `
+    <button class="cat-tab${c.id === activeCat ? ' active' : ''}" onclick="selectCatCatalog('${c.id}')">
+      <span class="cat-tab-icon">${c.icon}</span>
+      ${lang === 'ar' ? c.ar : c.en}
+    </button>
+  `).join('');
+      const cat = categories.find(c => c.id === activeCat);
+      const titleHtml = `<div style="text-align:center;margin-bottom:32px">
+    <h2 style="font-size:28px;font-weight:800;color:var(--brown-dark)">${cat.icon} ${lang === 'ar' ? cat.ar : cat.en}</h2>
+    <p style="font-size:14px;color:var(--text-light);margin-top:8px;font-style:italic">${lang === 'ar' ? cat.desc_ar : cat.desc_en}</p>
+  </div>`;
+      contentEl.innerHTML = titleHtml + `<div class="cat-grid">` +
+        Array.from({ length: 10 }, (_, i) => `
+      <div class="cat-card" onclick="openLightboxCat('${cat.id}', ${i})">
+        <div class="cat-card-img">
+          <img src="images/${cat.id}/${i + 1}.jpeg" alt="${lang === 'ar' ? cat.ar : cat.en} ${i + 1}"
+            onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>${cat.icon}</div>'">
+          <div class="cat-card-tag">${lang === 'ar' ? cat.ar : cat.en}</div>
+        </div>
+        <div class="cat-card-body">
+          <div class="cat-card-title">${lang === 'ar' ? cat.ar : cat.en} — ${lang === 'ar' ? 'قطعة' : 'Item'} ${i + 1}</div>
+          <div class="cat-card-sub">${lang === 'ar' ? cat.desc_ar : cat.desc_en}</div>
+        </div>
+      </div>
+    `).join('') + `</div>`;
+    }
+
+    function selectCatCatalog(id) {
+      activeCat = id;
+      renderCatalog();
+    }
+
+    // ===================== RENDER GALLERY =====================
+    function renderGallery() {
+      const el = document.getElementById('galleryGrid');
+      if (!el) return;
+      el.innerHTML = categories.flatMap(cat =>
+        Array.from({ length: 10 }, (_, i) => ({ cat, i }))
+      ).sort(() => Math.random() - 0.5).map(({ cat, i }) => `
+    <div class="gallery-item" onclick="openLightboxCat('${cat.id}', ${i})">
+      <img src="images/${cat.id}/${i + 1}.jpeg" alt="${lang === 'ar' ? cat.ar : cat.en}"
+        onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\' style=\'height:200px\'>${cat.icon}</div>'">
+      <div class="gallery-item-overlay">
+        <span class="gallery-item-label">${cat.icon} ${lang === 'ar' ? cat.ar : cat.en}</span>
+      </div>
+    </div>
+  `).join('');
+    }
+
+    // ===================== LIGHTBOX =====================
+    function openLightboxCat(catId, startIndex) {
+      const cat = categories.find(c => c.id === catId);
+      lightboxImages = Array.from({ length: 10 }, (_, i) => ({
+        src: `images/${cat.id}/${i + 1}.jpeg`,
+        label: (lang === 'ar' ? cat.ar : cat.en) + ' — ' + (i + 1)
+      }));
+      lightboxIndex = startIndex;
+      showLightbox();
+    }
+
+    function showLightbox() {
+      const lb = document.getElementById('lightbox');
+      const img = document.getElementById('lightboxImg');
+      const counter = document.getElementById('lightboxCounter');
+      img.src = lightboxImages[lightboxIndex].src;
+      img.onerror = () => { img.src = ''; img.alt = 'Image'; };
+      counter.textContent = `${lightboxIndex + 1} / ${lightboxImages.length}`;
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function lightboxNav(dir) {
+      lightboxIndex = (lightboxIndex + dir + lightboxImages.length) % lightboxImages.length;
+      showLightbox();
+    }
+
+    document.getElementById('lightbox').addEventListener('click', function (e) {
+      if (e.target === this) closeLightbox();
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') { if (lang === 'ar') lightboxNav(-1); else lightboxNav(1); }
+      if (e.key === 'ArrowLeft') { if (lang === 'ar') lightboxNav(1); else lightboxNav(-1); }
+    });
+
+    // ===================== WHATSAPP =====================
+    function openWhatsApp() {
+      const msg = lang === 'ar'
+        ? 'مرحباً، أودّ الاستفسار عن خدماتكم في تفصيل الستائر والمجالس'
+        : 'Hello, I would like to inquire about your curtains and majlis services';
+      const url = `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(msg)}`;
+      window.open(url, '_blank');
+    }
+
+    // ===================== BOOKING FORM =====================
+    async function submitBooking() {
+      const name = document.getElementById('bfName').value.trim();
+      const phone = document.getElementById('bfPhone').value.trim();
+      const email = document.getElementById('bfEmail').value.trim();
+      const city = document.getElementById('bfCity').value.trim();
+      const addr = document.getElementById('bfAddr').value.trim();
+      const service = document.getElementById('bfService').value;
+      const date = document.getElementById('bfDate').value;
+      const msg = document.getElementById('bfMsg').value.trim();
+
+      if (!name || !phone || !city || !addr || !service) {
+        showToast(lang === 'ar' ? 'الرجاء تعبئة جميع الحقول الإلزامية' : 'Please fill all required fields');
+        return;
+      }
+
+      const btn = document.getElementById('bf-submit');
+      btn.disabled = true;
+      btn.textContent = lang === 'ar' ? 'جاري الإرسال...' : 'Sending...';
+
+      const body = `
+━━━━━━━━━━━━━━━━━━━━━━━
+🏠 طلب حجز جديد — New Booking Request
+━━━━━━━━━━━━━━━━━━━━━━━
+
+👤 الاسم / Name: ${name}
+📞 الجوال / Phone: ${phone}
+📧 الإيميل / Email: ${email || 'N/A'}
+📍 الحي / District: ${city}
+🏘️ العنوان / Address: ${addr}
+🛠️ الخدمة / Service: ${service}
+📅 التاريخ / Date: ${date || 'N/A'}
+💬 تفاصيل / Details: ${msg || 'N/A'}
+
+━━━━━━━━━━━━━━━━━━━━━━━
+Sent from: تفصيل ستائر و مجالس Website
+  `.trim();
+
+      // Use mailto as EmailJS alternative (works without API)
+      const mailtoLink = `mailto:${OWNER_EMAIL}?subject=${encodeURIComponent('🏠 طلب حجز جديد - ' + name)}&body=${encodeURIComponent(body)}`;
+
+      setTimeout(() => {
+        window.location.href = mailtoLink;
+        document.getElementById('bookingFormFields').style.display = 'none';
+        document.getElementById('bookingSuccess').classList.add('show');
+        btn.disabled = false;
+        btn.textContent = t[lang].bfSubmit;
+      }, 800);
+    }
+
+    // ===================== QUICK MESSAGE =====================
+    function sendQuickMsg() {
+      const name = document.getElementById('qfName').value.trim();
+      const phone = document.getElementById('qfPhone').value.trim();
+      const msg = document.getElementById('qfMsg').value.trim();
+
+      if (!name || !phone || !msg) {
+        showToast(lang === 'ar' ? 'الرجاء تعبئة جميع الحقول' : 'Please fill all fields');
+        return;
+      }
+
+      const btn = document.getElementById('qf-submit');
+      btn.disabled = true;
+
+      const waMsg = `اسمي: ${name}\nجوالي: ${phone}\nرسالتي: ${msg}`;
+      const waUrl = `https://wa.me/${WHATSAPP_NUMBER.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(waMsg)}`;
+      window.open(waUrl, '_blank');
+
+      setTimeout(() => {
+        document.getElementById('quickFormFields').style.display = 'none';
+        document.getElementById('quickFormSuccess').classList.add('show');
+      }, 500);
+    }
+
+    // ===================== TOAST =====================
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toastMsg').textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3500);
+    }
+
+    // ===================== MOBILE MENU =====================
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+
+    // ===================== SCROLL EFFECTS =====================
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('mainNav');
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // ===================== INIT =====================
+    document.addEventListener('DOMContentLoaded', () => {
+      renderCategories();
+      renderCatalog();
+      renderGallery();
+      applyTranslations();
+    });
+  </script>
+
+</body>
+
+</html>
